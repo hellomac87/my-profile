@@ -15,9 +15,7 @@ const Stack: React.FC<{
         className={cx("image")}
         style={{ backgroundImage: `url(${imgSrc})` }}
       />
-      <div className={cx("pane")}>
-        <div className={cx("title")}>{title}</div>
-      </div>
+      <div className={cx("title")}>{title}</div>
     </div>
   );
 };

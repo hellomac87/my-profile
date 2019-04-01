@@ -3,8 +3,8 @@
 .container {
   @include flex-center-between;
   flex-direction: column;
-  width: 100px;
-  padding: 15px;
+  width: 120px;
+  padding: 10px;
 
   color: #fff;
   border-radius: 5px;
@@ -13,8 +13,8 @@
 }
 
 .image {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   border-radius: 5px;
   background: #222222;
   overflow: hidden;
@@ -22,7 +22,7 @@
   background-size: 50px 50px;
   background-repeat: no-repeat;
   overflow: hidden;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 
   transition-property: transform;
   transition-duration: 0.1s;
@@ -39,6 +39,6 @@
 
 .title {
   text-align: center;
-  font-weight: bold;
+
   font-size: 1.4rem;
 }

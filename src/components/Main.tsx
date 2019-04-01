@@ -20,7 +20,12 @@ const Main = () => {
       </section>
 
       <section className={cx("portfolio")}>
-        <article />
+        <article>
+          <div className={cx("portfolio_el")}>
+            <div className={cx("title")}>foblgate</div>
+            <div className={cx("image")} />
+          </div>
+        </article>
       </section>
     </div>
   );
