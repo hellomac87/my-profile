@@ -8,9 +8,7 @@ const cx = classNames.bind(styles);
 const Stack: React.FC<{
   imgSrc: string;
   title: string;
-  rating: number;
-  description: string;
-}> = ({ imgSrc, title, rating, description }) => {
+}> = ({ imgSrc, title }) => {
   return (
     <div className={cx("container")}>
       <div
@@ -19,8 +17,6 @@ const Stack: React.FC<{
       />
       <div className={cx("pane")}>
         <div className={cx("title")}>{title}</div>
-        <div className={cx("rating")}>{rating}</div>
-        <div className={cx("description")}>{description}</div>
       </div>
     </div>
   );
