@@ -3,6 +3,7 @@ import React from "react";
 import classNames from "classnames/bind";
 import styles from "./Main.module.scss";
 import StackContainer from "../containers/StackContainer";
+import DeveloperWindow from "./DeveloperWindow";
 
 const cx = classNames.bind(styles);
 
@@ -12,19 +13,21 @@ const Main = () => {
       <nav className={cx("nav")}>
         <a href="#stack">stack</a>
       </nav>
-      <section id="stack" className={cx("stack")}>
-        <h1 className={cx("stack__heading")}>tech stack</h1>
+
+      <section className={cx("content")}>
         <article>
-          <StackContainer />
+          <section id="stack" className={cx("stack")}>
+            <h1 className={cx("stack__heading")}>tech stack</h1>
+            <article>
+              <StackContainer />
+            </article>
+          </section>
         </article>
       </section>
 
-      <section className={cx("portfolio")}>
+      <section className={cx("develop_tool")}>
         <article>
-          <div className={cx("portfolio_el")}>
-            <div className={cx("title")}>foblgate</div>
-            <div className={cx("image")} />
-          </div>
+          <DeveloperWindow activeItem={"console"} />
         </article>
       </section>
     </div>
