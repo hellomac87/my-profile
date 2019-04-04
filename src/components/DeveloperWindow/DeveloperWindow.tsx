@@ -28,8 +28,8 @@ const DeveloperWindow: React.FC<Props> = ({ activeItem }) => {
         </div>
 
         <div className={cx("right_pane")}>
-          <span>option</span>
-          <span>x</span>
+          <span className={cx("setting")}>option</span>
+          <span className={cx("close")}>x</span>
         </div>
       </header>
 
