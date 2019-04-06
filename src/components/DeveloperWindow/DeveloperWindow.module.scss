@@ -102,6 +102,20 @@
   overflow: hidden;
 }
 
+.setting {
+  display: inline-block;
+  width: 32px;
+  height: 34px;
+  background-image: url("../../images/setting.png");
+  background-position: center center;
+  background-size: 22px 24px;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+  &:hover {
+    opacity: 1;
+  }
+}
+
 // console console
 .console {
   width: 100%;
